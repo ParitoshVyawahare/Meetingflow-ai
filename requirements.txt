@@ -1,0 +1,7 @@
+langchain
+langchain-groq
+langchain-core
+notion-client
+streamlit
+python-dotenv
+groq
