@@ -2,7 +2,8 @@
 
 > AI agent that turns meeting transcripts into action items in Notion and a follow-up email — drafted by AI, approved by you.
 
-**Live demo:** <img width="1392" height="867" alt="image" src="https://github.com/user-attachments/assets/a9537850-44af-461a-8994-138d4970b595" />
+**Live demo:** <img width="755" height="752" alt="image" src="https://github.com/user-attachments/assets/ebbfa652-2bab-46dc-b657-2d4aa407c940" />
+
 **Website Link:** https://meetingflow.streamlit.app/
 **Author:** [Paritosh Vyawahare](https://www.linkedin.com/in/paritoshvyawahare)
 
