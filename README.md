@@ -2,7 +2,8 @@
 
 > AI agent that turns meeting transcripts into action items in Notion and a follow-up email — drafted by AI, approved by you.
 
-**Live demo:** <img width="755" height="752" alt="image" src="https://github.com/user-attachments/assets/ebbfa652-2bab-46dc-b657-2d4aa407c940" />
+**Live demo:** <img width="1457" height="823" alt="image" src="https://github.com/user-attachments/assets/d11f07ae-fdbb-457f-a937-02e515f34d59" />
+
 
 **Website Link:** https://meetingflow.streamlit.app/
 **Author:** [Paritosh Vyawahare](https://www.linkedin.com/in/paritoshvyawahare)
@@ -34,37 +35,7 @@ This is not a summarizer. It's an **action-taking agent** — the kind of system
 
 ## Architecture
 
-┌──────────────────┐
-    │   User Input     │
-    │  (text or audio) │
-    └────────┬─────────┘
-             │
-             ▼
-   ┌──────────────────┐
-   │  Audio Agent     │  ← Groq Whisper (if audio)
-   │  (transcribe)    │
-   └────────┬─────────┘
-             │
-             ▼
-   ┌──────────────────┐
-   │ Extraction Agent │  ← Groq LLM (Llama 3.3 70B)
-   │  (structure)     │     + date resolution
-   └────────┬─────────┘
-             │
-    ┌────────┴─────────┐
-    ▼                  ▼
-    ┌──────────────┐   ┌──────────────┐
-│ Email Agent  │   │ Human Review │  ← Streamlit UI
-│ (tone-match) │   │   & Edit     │     (editable cards)
-└──────┬───────┘   └──────┬───────┘
-│                  │
-▼                  ▼
-Email Draft       ┌──────────────┐
-│ Notion Agent │  ← Notion API
-│ (create)     │     + date validation
-└──────────────┘
-│
-▼
+<img width="755" height="752" alt="image" src="https://github.com/user-attachments/assets/ebbfa652-2bab-46dc-b657-2d4aa407c940" />
 
 
 Tasks in Notion
